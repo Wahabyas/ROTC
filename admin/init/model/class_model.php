@@ -580,7 +580,7 @@
 		  }
 
 		  public function fetchAll_Date(){ 
-            $sql = "SELECT * FROM  tbl_date";
+            $sql = "SELECT * FROM  tbl_date ORDER BY Date_id DESC";
 				$stmt = $this->conn->prepare($sql); 
 				$stmt->execute();
 				$result = $stmt->get_result();
